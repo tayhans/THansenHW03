@@ -1,14 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_125_Million_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +23,76 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The $125 Million App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7J-ZF-GwC">
+                                <rect key="frame" x="16" y="20" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="CyG-V4-gfy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19X-QE-H3y">
+                                <rect key="frame" x="234" y="49" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="RE1-tr-Bbo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter miles" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UYs-5V-rVB">
+                                <rect key="frame" x="16" y="46" width="198" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07v-FX-Bs9">
+                                <rect key="frame" x="16" y="133" width="343" height="184"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JwF-ai-iKg">
+                                <rect key="frame" x="100" y="84" width="175" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="W10-S8-O7r"/>
+                                </constraints>
+                                <state key="normal" title="Convert"/>
+                                <connections>
+                                    <action selector="convertButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="65A-ti-8qu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="R7J-ZF-GwC" firstAttribute="trailing" secondItem="07v-FX-Bs9" secondAttribute="trailing" id="5Dn-zG-S0G"/>
+                            <constraint firstItem="19X-QE-H3y" firstAttribute="top" secondItem="R7J-ZF-GwC" secondAttribute="bottom" constant="8" symbolic="YES" id="CEi-5A-rF3"/>
+                            <constraint firstItem="R7J-ZF-GwC" firstAttribute="centerX" secondItem="JwF-ai-iKg" secondAttribute="centerX" id="DWd-d5-Vag"/>
+                            <constraint firstItem="07v-FX-Bs9" firstAttribute="top" secondItem="JwF-ai-iKg" secondAttribute="bottom" constant="19" id="GXh-S4-Eqy"/>
+                            <constraint firstItem="R7J-ZF-GwC" firstAttribute="leading" secondItem="UYs-5V-rVB" secondAttribute="leading" id="Nzn-FZ-ugj"/>
+                            <constraint firstItem="JwF-ai-iKg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="84" id="Py0-CJ-hbX"/>
+                            <constraint firstItem="R7J-ZF-GwC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="cEf-fW-Rdi"/>
+                            <constraint firstItem="19X-QE-H3y" firstAttribute="leading" secondItem="UYs-5V-rVB" secondAttribute="trailing" constant="20" id="gDa-bj-Z1o"/>
+                            <constraint firstItem="R7J-ZF-GwC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gY9-vp-8JH"/>
+                            <constraint firstItem="UYs-5V-rVB" firstAttribute="baseline" secondItem="19X-QE-H3y" secondAttribute="firstBaseline" id="jFT-Bt-f61"/>
+                            <constraint firstItem="JwF-ai-iKg" firstAttribute="top" secondItem="19X-QE-H3y" secondAttribute="bottom" constant="14" id="lGj-wN-2G2"/>
+                            <constraint firstItem="UYs-5V-rVB" firstAttribute="baseline" secondItem="19X-QE-H3y" secondAttribute="baseline" id="m1h-JB-Xwk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="07v-FX-Bs9" secondAttribute="bottom" constant="350" id="nlJ-vl-skv"/>
+                            <constraint firstItem="R7J-ZF-GwC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nos-bF-tpv"/>
+                            <constraint firstItem="UYs-5V-rVB" firstAttribute="leading" secondItem="07v-FX-Bs9" secondAttribute="leading" id="rAi-iL-bIX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="19X-QE-H3y" secondAttribute="trailing" constant="83" id="zLh-Fk-gZZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultsLabel" destination="07v-FX-Bs9" id="eQ1-rl-oiY"/>
+                        <outlet property="userInput" destination="UYs-5V-rVB" id="Azi-vZ-5M6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.875" y="138.38028169014083"/>
         </scene>
     </scenes>
 </document>
