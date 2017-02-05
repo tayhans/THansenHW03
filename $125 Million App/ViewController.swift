@@ -31,7 +31,12 @@ class ViewController: UIViewController {
             let km = miles * 1.6
             resultsLabel.text = "\(miles) miles = \(km) kilometers"
         } else {
-            resultsLabel.text = "\(userInput.text!) is not a valid number."
+            resultsLabel.text = ""
+            
+            let alertController = UIAlertController(title: "Entry Error", message: "Please enter a valid number. Not an empty string, no commas, symbols, or non-numeric characters", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(defaultAction)
+            present(alertController, animated: true, completion: nil)
         }
     }
     

@@ -48,8 +48,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07v-FX-Bs9">
-                                <rect key="frame" x="16" y="133" width="343" height="184"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07v-FX-Bs9">
+                                <rect key="frame" x="16" y="133" width="343" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -79,7 +79,7 @@
                             <constraint firstItem="UYs-5V-rVB" firstAttribute="baseline" secondItem="19X-QE-H3y" secondAttribute="firstBaseline" id="jFT-Bt-f61"/>
                             <constraint firstItem="JwF-ai-iKg" firstAttribute="top" secondItem="19X-QE-H3y" secondAttribute="bottom" constant="14" id="lGj-wN-2G2"/>
                             <constraint firstItem="UYs-5V-rVB" firstAttribute="baseline" secondItem="19X-QE-H3y" secondAttribute="baseline" id="m1h-JB-Xwk"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="07v-FX-Bs9" secondAttribute="bottom" constant="350" id="nlJ-vl-skv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="07v-FX-Bs9" secondAttribute="bottom" constant="350" id="nlJ-vl-skv"/>
                             <constraint firstItem="R7J-ZF-GwC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nos-bF-tpv"/>
                             <constraint firstItem="UYs-5V-rVB" firstAttribute="leading" secondItem="07v-FX-Bs9" secondAttribute="leading" id="rAi-iL-bIX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="19X-QE-H3y" secondAttribute="trailing" constant="83" id="zLh-Fk-gZZ"/>
